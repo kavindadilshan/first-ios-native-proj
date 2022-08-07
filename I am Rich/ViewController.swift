@@ -26,6 +26,14 @@ class ViewController: UIViewController {
       get random numbers for use Int.random(in: 1...4)
       array's random elements get fot randomElement()
      */
+    
+    /**
+     Random Genarator
+     Int.random(in: 0...3)
+     Float.random(in: 0...3)
+     Int.random(in: 0..<3)
+     bool.random()
+     */
 
     @IBAction func onButtonPress(_ sender: UIButton) {
         var leftDiceNumber = 1
@@ -33,7 +41,7 @@ class ViewController: UIViewController {
 //        diceImageViewOne.image = #imageLiteral(resourceName: "DiceTwo")
 //        diceImageViewTwo.image = #imageLiteral(resourceName: "DiceTwo")
         diceImageViewOne.image = [#imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceFour")][Int.random(in: 0...3)]
-        diceImageViewOne.image = [#imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceFour")].randomElement()
+//        diceImageViewOne.image = [#imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceFour")].randomElement()
         leftDiceNumber = leftDiceNumber + 1
     }
 }
