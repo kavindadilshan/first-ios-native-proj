@@ -23,6 +23,7 @@ class ViewController: UIViewController {
     
     /**
      you can use get image literal with #imageLiteral()
+      get random numbers for use Int.random(in: 1...4)
      */
 
     @IBAction func onButtonPress(_ sender: UIButton) {
@@ -30,7 +31,7 @@ class ViewController: UIViewController {
         print("left dice number \(leftDiceNumber)")
 //        diceImageViewOne.image = #imageLiteral(resourceName: "DiceTwo")
 //        diceImageViewTwo.image = #imageLiteral(resourceName: "DiceTwo")
-        diceImageViewOne.image = [#imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceFour")][leftDiceNumber]
+        diceImageViewOne.image = [#imageLiteral(resourceName: "DiceFive"), #imageLiteral(resourceName: "DiceThree"), #imageLiteral(resourceName: "DiceTwo"), #imageLiteral(resourceName: "DiceFour")][Int.random(in: 0...3)]
         leftDiceNumber = leftDiceNumber + 1
     }
 }
